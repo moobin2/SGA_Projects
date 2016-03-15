@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Vampire">
+      <UniqueIdentifier>{c710e7bc-0e68-4c12-8d6b-eacf567ff0a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Slayer">
+      <UniqueIdentifier>{e2c13905-66b5-466b-8368-db780f2b998b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Ousters">
+      <UniqueIdentifier>{5ef28524-b7dd-470e-bf7e-9f9bb42ff0b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Race">
+      <UniqueIdentifier>{a8b0014a-a209-4bb6-9f51-cfa27759da9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Slayer">
+      <UniqueIdentifier>{1f659253-a852-46fc-b3f2-6e853ca0b0c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Vampire">
+      <UniqueIdentifier>{7c0d7251-f22f-4fae-a59c-eb18e242d31f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Ousters">
+      <UniqueIdentifier>{3c2b4bc7-3f72-4ad4-819e-69f89d73006a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Race">
+      <UniqueIdentifier>{05950f75-deaa-44ce-99aa-1a56eaff76fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="race.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Hero.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Slayer.h">
+      <Filter>헤더 파일\Race</Filter>
+    </ClInclude>
+    <ClInclude Include="Vampire.h">
+      <Filter>헤더 파일\Race</Filter>
+    </ClInclude>
+    <ClInclude Include="Ousters.h">
+      <Filter>헤더 파일\Race</Filter>
+    </ClInclude>
+    <ClInclude Include="Blade_Slayer.h">
+      <Filter>헤더 파일\Slayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Gun_Slayer.h">
+      <Filter>헤더 파일\Slayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Heal_Slayer.h">
+      <Filter>헤더 파일\Slayer</Filter>
+    </ClInclude>
+    <ClInclude Include="DEX_Vampire.h">
+      <Filter>헤더 파일\Vampire</Filter>
+    </ClInclude>
+    <ClInclude Include="INT_Vampire.h">
+      <Filter>헤더 파일\Vampire</Filter>
+    </ClInclude>
+    <ClInclude Include="STR_Vampire.h">
+      <Filter>헤더 파일\Vampire</Filter>
+    </ClInclude>
+    <ClInclude Include="Earth_Ousters.h">
+      <Filter>헤더 파일\Ousters</Filter>
+    </ClInclude>
+    <ClInclude Include="Fire_Ousters.h">
+      <Filter>헤더 파일\Ousters</Filter>
+    </ClInclude>
+    <ClInclude Include="Water_Ousters.h">
+      <Filter>헤더 파일\Ousters</Filter>
+    </ClInclude>
+    <ClInclude Include="Battle.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Hero.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DEX_Vampire.cpp">
+      <Filter>소스 파일\Vampire</Filter>
+    </ClCompile>
+    <ClCompile Include="STR_Vampire.cpp">
+      <Filter>소스 파일\Vampire</Filter>
+    </ClCompile>
+    <ClCompile Include="INT_Vampire.cpp">
+      <Filter>소스 파일\Vampire</Filter>
+    </ClCompile>
+    <ClCompile Include="Blade_Slayer.cpp">
+      <Filter>소스 파일\Slayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Gun_Slayer.cpp">
+      <Filter>소스 파일\Slayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Heal_Slayer.cpp">
+      <Filter>소스 파일\Slayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Fire_Ousters.cpp">
+      <Filter>소스 파일\Ousters</Filter>
+    </ClCompile>
+    <ClCompile Include="Earth_Ousters.cpp">
+      <Filter>소스 파일\Ousters</Filter>
+    </ClCompile>
+    <ClCompile Include="Water_Ousters.cpp">
+      <Filter>소스 파일\Ousters</Filter>
+    </ClCompile>
+    <ClCompile Include="Ousters.cpp">
+      <Filter>소스 파일\Race</Filter>
+    </ClCompile>
+    <ClCompile Include="Vampire.cpp">
+      <Filter>소스 파일\Race</Filter>
+    </ClCompile>
+    <ClCompile Include="Slayer.cpp">
+      <Filter>소스 파일\Race</Filter>
+    </ClCompile>
+    <ClCompile Include="race.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Battle.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
