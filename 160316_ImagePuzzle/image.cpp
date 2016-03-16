@@ -195,6 +195,7 @@ void image::render( HDC hdc, int destX, int destY )
 	}
 }
 
+// 원하는 크기로 키워주는 랜더함수 
 void image::render(HDC hdc, int destX, int destY , int Width, int Height)
 {
 	if (_trans)
@@ -217,6 +218,7 @@ void image::render(HDC hdc, int destX, int destY , int Width, int Height)
 	}
 }
 
+// 렉터위 그려주는 함수.
 void image::render(HDC hdc, RECT rc, int num)
 {
 	int width = rc.right - rc.left;
