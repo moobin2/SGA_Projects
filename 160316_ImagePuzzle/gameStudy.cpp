@@ -84,6 +84,7 @@ void gameStudy::render(HDC hdc)
 	for (int i = 0; i < PuzzleNum; i++)
 	{
 		_background->render(backDC, _image[i].imageRC, _image[i].num);
+		//BitBlt(hdc, rc.left, rc.top, width, height, _imageInfo->hMemDC,  (num % 4) * width, (num / 4) * height, SRCCOPY);
 		if(_image[i].num == 15) Rectangle(backDC, _image[i].imageRC.left, _image[i].imageRC.top, _image[i].imageRC.right, _image[i].imageRC.bottom);
 	}
 	
