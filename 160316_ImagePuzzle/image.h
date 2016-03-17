@@ -19,7 +19,7 @@ public:
 		int height;
 		BYTE loadType;
 
-		tagImageInfo( )
+		tagImageInfo( )	//구조체 안 생성자에서 이미지인포 초기화 함
 		{
 			resID = 0;
 			hMemDC = NULL;
@@ -35,17 +35,15 @@ private:
 	//생성과 동시에 멤버이니셜 라이즈로 초기화 해주는 변수들
 	LPIMAGE_INFO      _imageInfo;        //이미지 정보
 	CHAR*             _fileName;         //이미지 경로 이름
-
-	BOOL              _trans;             //투명배경이냐?
+	BOOL              _trans;            //투명배경이냐?
 	COLORREF          _transColor;       //투명컬러키
-
 
 public:
 	image( );
 	~image( );
-
+	/* -------------- 이미지 종류에 따라 생성하는 방법 ---------------- */
 	//빈 비트맵 이미지 만든다
-	HRESULT init( int width, int height );
+	HRESULT init( int width, int height );	//더블버퍼(백버퍼) 쓰기용 (gameNode에 setbuffer에 쓰임)
 
 	//리소스로부터 읽어본다
 	HRESULT init( const DWORD resID, int width, int height, BOOL trans = FALSE, COLORREF transColor = FALSE );
@@ -59,6 +57,7 @@ public:
 	//투명 키값(RGB값) 셋팅 == 특정 색상을 그리지 않는다
 	void setTransColor(BOOL trans, COLORREF transColor);
 
+	/* -------------- 이미지 그려주는 방법 ------------------ */
 	//렌더
 	void render( HDC hdc, int destX, int destY );
 

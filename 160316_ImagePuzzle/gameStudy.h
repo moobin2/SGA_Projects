@@ -14,6 +14,7 @@ class gameStudy : public gameNode
 private:
 	image* _background;
 	tagImage _image[PuzzleNum];
+	int _gameCount;
 public:
 	gameStudy();
 	virtual ~gameStudy();
@@ -25,6 +26,7 @@ public:
 
 	void imageSetting(void);
 	void shuffle(tagImage* image);
-	void rectMove(tagImage * image, int index);
+	void rectMove(tagImage* image, int index);
+	BOOL clear(tagImage* image);
 };
 

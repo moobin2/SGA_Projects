@@ -3,11 +3,7 @@
 
 #pragma comment( lib, "msimg32.lib" )
 
-image::image( ) :
-_imageInfo( NULL ),
-_fileName( NULL ),
-_trans( false ),
-_transColor( RGB( 0, 0, 0 ) )
+image::image( ) :_imageInfo( NULL ),_fileName( NULL ),_trans( false ),_transColor( RGB( 0, 0, 0 ) )
 {
 }
 
@@ -55,7 +51,6 @@ HRESULT image::init( int width, int height )
 	if ( _imageInfo->hBit == 0 )
 	{
 		release( );
-
 		return E_FAIL;
 	}
 
@@ -150,7 +145,7 @@ void image::release( void )
 {
 	if (_imageInfo)
 	{
-		//이미지 삭제
+		//이미지 삭제 (원래 있던거 원상복귀)
 		SelectObject(_imageInfo->hMemDC, _imageInfo->hOBit);
 		DeleteObject(_imageInfo->hBit);
 		DeleteDC(_imageInfo->hMemDC);
@@ -204,8 +199,8 @@ void image::render(HDC hdc, int destX, int destY , int Width, int Height)
 			hdc,				//복사할 장소의 DC
 			destX,				//복사될 좌표 시작X
 			destY,				//복사될 좌표 시작Y
-			Width,	//복사될 크기 width
-			Height,	//복사될 크기 height
+			Width,				//복사될 크기 width
+			Height,				//복사될 크기 height
 			_imageInfo->hMemDC,	//복사할 DC
 			0, 0,				//복사 시작지점 x, y
 			_imageInfo->width,	//복사할 크기 width
@@ -229,13 +224,13 @@ void image::render(HDC hdc, RECT rc, int num)
 			hdc,				//복사할 장소의 DC
 			rc.left,			//복사될 좌표 시작X
 			rc.top,				//복사될 좌표 시작Y
-			width,	//복사될 크기 width
-			height,	//복사될 크기 height
+			width,				//복사될 크기 width
+			height,				//복사될 크기 height
 			_imageInfo->hMemDC,	//복사할 DC
 			(num % 4) * width,
 			(num / 4) * height,
-			width,	//복사할 크기 width
-			height,	//복사할 크기 height
+			width,				//복사할 크기 width
+			height,				//복사할 크기 height
 			_transColor);		//복사에서 제외할 색상
 	}
 	else
