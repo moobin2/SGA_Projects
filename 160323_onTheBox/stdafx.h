@@ -22,13 +22,17 @@
 #include "commonMacroFunction.h"
 #include "randomFunction.h"
 #include "keyManager.h"
+#include "utils.h"
+#include "imageManager.h"
+
+//using namespace MY_UTIL;
 
 /* ===== 디파인문 ===== */
-#define WINNAME (LPTSTR)(TEXT("160316_ImagePuzzle"))
+#define WINNAME (LPTSTR)(TEXT("API_1601"))
 #define WINSTARTX 100
 #define WINSTARTY 100
-#define WINSIZEX 1024
-#define WINSIZEY 768
+#define WINSIZEX 800
+#define WINSIZEY 500
 #define CENTERX (WINSIZEX / 2)
 #define CENTERY (WINSIZEY / 2)
 #define WINSTYLE WS_CAPTION | WS_SYSMENU
@@ -39,6 +43,7 @@
 
 #define RND randomFunction::getSingleton()
 #define KEYMANAGER keyManager::getSingleton()
+#define IMAGEMANAGER imageManager::getSingleton()
 
 
 /* ===== 전역 변수 ===== */

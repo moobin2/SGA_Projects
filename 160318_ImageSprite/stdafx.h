@@ -24,7 +24,7 @@
 #include "keyManager.h"
 
 /* ===== 디파인문 ===== */
-#define WINNAME (LPTSTR)(TEXT("160316_ImagePuzzle"))
+#define WINNAME (LPTSTR)(TEXT("160318_ImageSprite"))
 #define WINSTARTX 100
 #define WINSTARTY 100
 #define WINSIZEX 1024

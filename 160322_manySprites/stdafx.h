@@ -24,11 +24,11 @@
 #include "keyManager.h"
 
 /* ===== 디파인문 ===== */
-#define WINNAME (LPTSTR)(TEXT("160316_ImagePuzzle"))
+#define WINNAME (LPTSTR)(TEXT("CookieRun"))
 #define WINSTARTX 100
 #define WINSTARTY 100
-#define WINSIZEX 1024
-#define WINSIZEY 768
+#define WINSIZEX 800
+#define WINSIZEY 500
 #define CENTERX (WINSIZEX / 2)
 #define CENTERY (WINSIZEY / 2)
 #define WINSTYLE WS_CAPTION | WS_SYSMENU

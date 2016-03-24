@@ -93,6 +93,7 @@ int main(void)
 	}
 	cout << endl << "2. 데이터삭제 erase(key=4): ";
 	mNum.erase(4);
+	
 	for (mPos = mNum.begin(); mPos != mNum.end(); mPos++)
 	{
 		cout << "<" << mPos->first << " : " << mPos->second << "> ";
